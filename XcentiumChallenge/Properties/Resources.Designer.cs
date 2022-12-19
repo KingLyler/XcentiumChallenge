@@ -81,24 +81,6 @@ namespace XcentiumChallenge.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to USE [master]
-        ///GO
-        ///
-        ////****** Object:  Database [XctLogin]    Script Date: 12/18/2022 6:32:04 PM ******/
-        ///CREATE DATABASE [XctLogin]
-        /// CONTAINMENT = NONE
-        /// ON  PRIMARY 
-        ///( NAME = N&apos;XctLogin&apos;, FILENAME = N&apos;C:\Program Files\Microsoft SQL Server\MSSQL15.SQLEXPRESS\MSSQL\DATA\XctLogin.mdf&apos; , SIZE = 8192KB , MAXSIZE = UNLIMITED, FILEGROWTH = 65536KB )
-        /// LOG ON 
-        ///( NAME = N&apos;XctLogin_log&apos;, FILENAME = N&apos;C:\Program Files\Microsoft SQL Server\MSSQL15.SQLEXPRESS\MSSQL\DATA\XctLogin.ldf&apos; , SIZE = 8192KB , MAXSIZE = 2048G [rest of string was truncated]&quot;;.
-        /// </summary>
-        internal static string Database {
-            get {
-                return ResourceManager.GetString("Database", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap heroBanner {

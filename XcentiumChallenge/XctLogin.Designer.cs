@@ -130,7 +130,7 @@
             this.label1.Size = new System.Drawing.Size(104, 16);
             this.label1.TabIndex = 3;
             this.label1.Text = "Code Challenge";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+     
             // 
             // panel5
             // 

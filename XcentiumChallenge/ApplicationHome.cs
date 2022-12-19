@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace XcentiumChallenge
@@ -23,7 +17,7 @@ namespace XcentiumChallenge
         private void ApplicationHome_Load(object sender, EventArgs e)
         {
             applicationHome = this;
-
+            // create new Home object and dock in ApplicationHome pnlMain
             Home home = new Home();
             home.Dock = DockStyle.Fill;
             pnlMain.Controls.Add(home);
@@ -63,14 +57,9 @@ namespace XcentiumChallenge
             this.WindowState = FormWindowState.Minimized;
         }
 
-        
-        private void lblLittleBookstore_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnLogout_Click(object sender, EventArgs e)
         {
+            // create new Login form object, hide and close ApplicationHome
             LoginHome login = new LoginHome();
             this.Hide();
             login.ShowDialog();
@@ -79,6 +68,7 @@ namespace XcentiumChallenge
 
         private void btnHome_Click(object sender, EventArgs e)
         {
+            // create new Home, dock in pnlMain
             Home home = new Home();
             home.Dock = DockStyle.Fill;
             pnlMain.Controls.Add(home);
@@ -86,11 +76,12 @@ namespace XcentiumChallenge
         }
 
         private void btnAbout_Click(object sender, EventArgs e)
-        {                      
+        {
+            // create new About, dock in pnlMain
             About about = new About();
             about.Dock = DockStyle.Fill;
             pnlMain.Controls.Add(about);
-            about.BringToFront();  
+            about.BringToFront();
         }
     }
 }

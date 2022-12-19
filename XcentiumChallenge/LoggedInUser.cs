@@ -11,6 +11,7 @@ namespace XcentiumChallenge
         static int _id;
         static string _username;
         static string _name;
+        static string _password;
 
         public static int Id
         {
@@ -28,6 +29,12 @@ namespace XcentiumChallenge
         {
             get { return _name; } 
             set { _name = value; }
+        }
+        
+        public static string Password
+        {
+            get { return _password; }
+            set { _password = value; }
         }
     }
 }

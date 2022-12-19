@@ -1,12 +1,5 @@
 ﻿using System;
 using System.Drawing;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace XcentiumChallenge
@@ -14,24 +7,7 @@ namespace XcentiumChallenge
     public partial class LoginHome : Form
     {
         static LoginHome loginHome; // creates static Home Object to be shared
-        
-        public static LoginHome Instance
-        {
-            get
-            {
-                if (loginHome == null)
-                {
-                    loginHome = new LoginHome();
-                }
-                return loginHome;
-            }
-        }
 
-        public Panel MainLoginPanel
-        {
-            get { return pnlMain; }
-            set { pnlMain = value; }
-        }
         public LoginHome()
         {
             InitializeComponent();
@@ -40,7 +16,7 @@ namespace XcentiumChallenge
         private void LoginHome_Load(object sender, EventArgs e)
         {
             loginHome = this;
-
+            // loads new login
             XctLogin login = new XctLogin();
             login.Dock = DockStyle.Fill;
             pnlMain.Controls.Add(login);
@@ -48,11 +24,13 @@ namespace XcentiumChallenge
 
         private void btnExit_Click(object sender, EventArgs e)
         {
+            // exit button closes window on click
             this.Close();
         }
 
         private void btnMinimize_Click(object sender, EventArgs e)
         {
+            // minimize button on click
             this.WindowState = FormWindowState.Minimized;
         }
 
@@ -73,6 +51,5 @@ namespace XcentiumChallenge
             mouseDown = false;
         }
 
-       
     }
 }
